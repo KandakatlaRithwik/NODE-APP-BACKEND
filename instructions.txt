@@ -1,0 +1,3 @@
+npm init -y: init node package manager
+npm install express ejs bcrypt jsonwebtoken mongoose express-ejs-layouts dotenv cors
+this is to install the required packages
