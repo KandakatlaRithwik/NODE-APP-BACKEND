@@ -25,8 +25,8 @@ const startServer=async()=>{
     })
 }
 
-//home page
-app.get("/",authAdminRouter)
+//Login page
+app.use("/",authAdminRouter)
 
 //api routes
 app.use('/api',authUserRouter)
