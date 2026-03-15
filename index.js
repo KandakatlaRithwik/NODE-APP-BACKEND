@@ -5,6 +5,7 @@ import productRouter from './routes/productRoute.js'
 import storeRouter from './routes/storeRoute.js'
 import authAdminRouter from './routes/authAdminRoute.js'
 import authUserRouter from './routes/authUserRoute.js'
+import userRouter from './routes/userRoute.js'
 import dbConnect from './config/db.js'
 import cors from "cors"
 dotenv.config()
@@ -34,5 +35,6 @@ app.use('/api/store',storeRouter)
 
 //admin routes
 app.use('/admin/products',productRouter)
+app.use('/admin/users',userRouter)
 
 startServer()
